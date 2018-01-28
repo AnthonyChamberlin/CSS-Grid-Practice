@@ -12,7 +12,7 @@ body {
     display: grid;
     /* grid-template-columns: 20% 20% 60%; */
     /* grid-template-columns: 1fr 2fr 1fr; */
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* grid-auto-rows: minmax(200px, auto); */
     grid-template-rows: repeat(4 , minmax(150px, auto));
     grid-gap: 10px;
@@ -29,9 +29,22 @@ body {
     background: #777;
 }
 
-.one {
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-column: span 3;
+}
+
+.nested p {
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+/* .one {
     grid-column: 1/3;
 }
 .two {
@@ -44,11 +57,23 @@ body {
 .four {
     grid-column: 4/7;
     grid-row: 2/4;
+} 
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-column: 1/7;
+}
+.nested p {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
 }
 .five {
     grid-column: 3/7;
 }
 .six {
     grid-column: 1/3;
-    grid-row: 4/5;
-}
+    grid-row: 4;
+} */
