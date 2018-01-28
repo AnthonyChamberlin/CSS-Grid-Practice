@@ -43,6 +43,11 @@ body {
     margin: 0;
 }
 
+.one {
+    justify-self: end;
+    align-self: end;
+}
+
 
 /* .one {
     grid-column: 1/3;
